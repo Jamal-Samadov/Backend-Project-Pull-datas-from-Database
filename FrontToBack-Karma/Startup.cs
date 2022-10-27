@@ -21,7 +21,7 @@ namespace FrontToBack_Karma
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(opt =>
             {
-                opt.UseSqlServer(@"Server=WIN-KHML5TFA8I5\SQLEXPRESS;Database = KarmaDb; Trusted_Connection = true; Integrated Security = true");
+                opt.UseSqlServer(@"Server=.\SQLEXPRESS;Database = KarmaDb; Trusted_Connection = true; Integrated Security = true");
             });
         }
 
